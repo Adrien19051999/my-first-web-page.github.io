@@ -2,105 +2,313 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Muffins</title>
-  <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+  <title>AV Photographie</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Raleway:ital,wght@0,800;0,900;1,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="text-center">
 
+<!-- Les séparation par 3 traits -->
   <div class="line-transparent">
-    <div class="line-dark"></div>
+    <div class="line-hard"></div>
     <div class="line-medium"></div>
     <div class="line-light"></div>
   </div>
 
-  <div class="cadre margin-100px">
-    <h1 class="color-green">Les Muffins de Grand Mère</h1>
-    <h2 class="color-green">Fondants et croustillants</h2>
-    <img src="images/logo.png" alt="muffin" class="avatar">
-    <br>
-    <a href="https://www.marmiton.org/recettes/recette_muffins-tres-simples_166385.aspx" target="_blanck" class="btn-pink">En savoir plus</a>
+
+<!-- La navbar -->
+  <div class="my-navbar">
+    <a href="index.html">
+      <img src="images/logo.png" class="logo">
+    </a>
+    <div class="links">
+      <a href="#presentation" class="link">Qui suis-je ?</a>
+      <a href="#studio" class="link">Le studio</a>
+      <a href="#galeries_tarifs" class="link">Galeries / Tarifs</a>
+      <a href="#reservation" class="link">Réservations</a>
+
+
+      <button type="button" class="btn btn-success" data-toggle="modal" data-target="#ModalAV">
+        On reste en contact ?
+      </button>
+
+
+
+      <!-- Modal -->
+      <div class="modal fade" id="ModalAV" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <h3 class="color-green m-4">AV Photographie</h3>
+              <a href="mailto:adrien.viller@efap.com" target="_blanck"><i class="fas fa-envelope"></i> : adrien.viller@efap.com</a>
+              <br>
+              <a href="tel:0102030405" target="_blanck"><i class="fas fa-phone-square-alt"></i> : 01 02 03 04 05 </a>
+              <div>
+                <a class="socials" href="https://www.facebook.com/adriien.viller">
+                  <i class="fab fa-facebook-square"></i>
+                </a>
+                <a class="socials" href="https://www.instagram.com/adrii_viller/">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a class="socials" href="https://www.linkedin.com/in/adrien-viller-communication/">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+              </div>
+            </div>
+            <div class="modal-footer">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
   </div>
 
-  <div class="cadre margin-100px">
-    <h3 class="color-green">Présentation</h3>
-    <p><b>Les muffins</b> sont de petits gâteaux individuels s'apparentant aux madeleines. Apparus au pays de Galles aux alentours du XIe siècle, ils sont très répandus dans les pays anglo-saxons, principalement aux États-Unis. Le principe caractéristique de fabrication des muffins consiste à préparer le mélange des ingrédients liquides et celui des ingrédients secs séparément, puis à mélanger rapidement et <i>grossièrement</i> les deux préparations. Contrairement aux cupcakes, les muffins n’ont jamais de glaçage.
-    <br>
-    Les muffins sont traditionnellement sucrés. On peut les retrouver au chocolat (avec des pépites de chocolat) ou nature, mais il existe de nombreuses autres variétés : fraise, banane, framboise, orange, vanille, myrtille ou bleuets, etc.
-    <br>
-    Il existe également des muffins salés, les English muffins ou muffins anglais, ressemblant à des sortes de petites crêpes très épaisses, faits à partir de pâte levée. Ces muffins salés sont quelquefois faits avec de la farine complète. Ils sont notamment employés comme base de la préparation des "œufs Bénédicte".</p>
+<!-- Image background -->
+
+  <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(images/banner.png);">
+    <div class="container">
+      <h1 class="color-green">Bienvenue dans mes univers photos</h1>
+      <h2 class="color-green">Pour particuliers et professionnels </h2>
+      <img src="images/adrien.jpg" alt="Adrien Viller Photographe" class="avatar">
+      <br>
+      <a href="https://adrien-viller-photographie.com/" target="_blanck" class="my-btn">Découvrir</a>
+    </div>
   </div>
 
-  <div class="cadre margin-100px">
-    <h3 class="color-green">La recette en vidéo</h3>
-    <iframe width="500" height="300" src="https://www.youtube.com/embed/fBuSNu2m3XA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <div class="line-transparent">
+    <div class="line-hard"></div>
+    <div class="line-medium"></div>
+    <div class="line-light"></div>
   </div>
 
 
-  <div class="display-flex margin-100px">
+  <div id="presentation"></div>
 
-    <div class="cadre text-left margin-right-30px">
-      <h4  class="color-green">Ingredients</h4>
-      <ul>
-        <li> 281 g de farine</li>
-        <li> 2 oeufs</li>
-        <li> 100 g de sucre</li>
-        <li> 150 ml de lait</li>
-        <li> 80 g de beurre (ou 8 cuillères à soupe d'huile)</li>
-        <li> 1 sachet de levure chimique</li>
-        <li> 1 sachet de sucre vanillé</li>
-        <li> 1 pincée de sel</li>
-        <li> Cannelle</li>
-        <li> Extrait de vanille</li>
+  <div class="cadre">
+    <h3 class="color-green m-4">Adrien VILLER...</h3>
+
+    <p> <b>Hello, Je suis photographe et vidéaste</b>
+      <br> 
+      Entrez dans mon univers …
+      <br> <br> 
+      Je suis passionné par l’image! Étudiant en deuxième année à l’EFAP Bordeaux, je suis une personne dynamique, créative et impliquée dans tout ce que j’entreprends. 
+<br> 
+      Auto-entrepreneur, je vous offre un large éventail de services, de prises de vues et de retouches dans le but de mettre en valeur vos envies et votre personnalité. </p>
+<div class="line-transparent">
+    <div class="line-hard"></div>
+    <div class="line-medium"></div>
+    <div class="line-light"></div>
+  </div>
+  
+    <h3 class="color-green m-4">... Vidéo &#127909 </h3>
+    <iframe width="100%" height="600" src="https://www.youtube.com/embed/LwrIzN1HGZw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+
+
+
+    <div class="line-hard"></div>
+    <div class="line-medium"></div>
+    <div class="line-light"></div>
+
+<div id="réalisations"></div>
+  <div class="horizontal-position">
+    <div class="text-left">
+    <img src="images/SLIMANE.png" alt="SLIMANE" class="images44">
+    </div>
+
+    <div class="text-left">
+      <h4 class="color-green">Concert</h4>
+      <p> <b>Sous les projecteurs...</b><br></p>
+         <ul>
+        <li> Sur scène,</li>
+        <li> En back stage,</li>
+        <li> En crash barrière,</li>
+        <li> En coulisses,</li>
       </ul>
+      <p>Je capte l’émotion des artistes et performeurs en lumière.</p>
+      
+    </div>
+  </div>
+
+<div class="horizontal-position">
+
+    <div class="text-right">
+      <br><br><h4 class="color-green">Packshot</h4>
+      <p> <b>Le souci du détail...</b> <br>
+Le packshot est une photo de produits destinée à une utilisation publicitaire, sur différents supports de communication. Adrien Viller Photographie met sa créativité au service de vos produits ou de vos services.</p>
+      
     </div>
 
-    <div class="cadre text-left">
-      <h4 class="color-green">Préparation</h4>
-      <ol>
-        <li>
-          <p><b>Etape 1</b> :
-            Dans un premier saladier : mélanger la farine, le sucre, le sel, le sucre vanillé et la levure.
-          </p>
-        </li>
-        <li>
-          <p><b>Etape 2</b> :
-            Dans un deuxième saladier : mélanger le lait, l'huile(ou beurre fondu) et les oeufs.
-          </p>
-        </li>
-        <li>
-          <p><b>Etape 3</b> :
-            Verser le contenu du second saladier dans le premier et remuer jusqu'à obtenir une pâte plutôt lisse. Laissez tout de même quelques petits grumeaux.
-          </p>
-        </li>
-        <li>
-          <p><b>Etape 4</b> :
-            Mettre au four 15 min à 180°C (thermostat 6)
-          </p>
-        </li>
-      </ol>
+    <div class="text-left">
+    <img src="images/packshot.png" alt="Packshot" class="images44">
+    </div>
+  </div>
+
+ <div class="horizontal-position">
+
+    <div class="text-left">
+    <img src="images/shoot.png" alt="Shooting pro pour particulier" class="images44">
     </div>
 
+    <div class="text-left">
+      <h4 class="color-green">Shooting pro pour particulier</h4>
+      <p> <b>Être remarqué et remarquable...</b><br>
+Faites la différence avec un portrait de qualité qui vous correspond sur vos CV et réseaux professionnels. Réalisé en studio par Adrien Viller, en noir et blanc ou en couleur, plutôt traditionnel ou actuel, votre image s’adapte à toutes vos demandes et tous vos besoins. </p>
+      
+    </div>
   </div>
 
-   <div class="cadre margin-100px">
-    <h3 class="color-green">Vos productions</h3>
-    <img src="images/production1.jpg" class="production">
-    <img src="images/production2.jpg" class="production">
-    <img src="images/production3.jpg" class="production">
+   
+
+
+  <div class="line-light"></div>
+  <div class="line-medium"></div>
+  <div class="line-hard"></div>
+    
+
+
+    
+<div id="studio"></div>
+  <div class="cadre">
+    <h3 class="color-green m-4">Le studio Bordelais</h3>
+    <div class="d-flex justify-content-between">
+
+      <div id="mc_embed_signup">
+        <form action="https://a-waree.us15.list-manage.com/subscribe/post?u=9ef09dfae3eb2da317e4e3b49&amp;id=acb7df8fb7" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+          <div id="mc_embed_signup_scroll">
+            <h2 class="color-green">Souscrire à notre newsletter photo </h2>
+          <div class="indicates-required"><span class="asterisk">*</span> Obligatoire</div>
+          <div class="mc-field-group">
+            <label for="mce-EMAIL">Email<span class="asterisk">*</span></label>
+            <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+          </div>
+          <div class="mc-field-group">
+            <label for="mce-FNAME">Nom de famille<span class="asterisk">*</span></label>
+            <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+          </div>
+          <div class="mc-field-group">
+            <label for="mce-LNAME">Prénom<span class="asterisk">*</span></label>
+            <input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+          </div>
+          <div id="mce-responses" class="clear">
+            <div class="response" id="mce-error-response" style="display:none"></div>
+            <div class="response" id="mce-success-response" style="display:none"></div>
+          </div>
+          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_9ef09dfae3eb2da317e4e3b49_acb7df8fb7" tabindex="-1" value=""></div>
+            <div class="clear">
+              <input type="submit" value="Souscrire" name="subscribe" id="mc-embedded-subscribe" class="my-btn">
+            </div>
+          </div>
+        </form>
+      </div>
+
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2827.8738149013925!2d-0.561680784191397!3d44.86486358125372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd55288b8feee4d5%3A0xbc1b7fed73ad1545!2s122-116%20Rue%20Lucien%20Faure%2C%2033300%20Bordeaux!5e0!3m2!1sfr!2sfr!4v1591953152418!5m2!1sfr!2sfr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
   </div>
 
 
-  <div class="cadre margin-100px">
-    <h3 class="color-green">Une super adresse!</h3>
-
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13041.474820093155!2d-0.5832487286951241!3d44.85219723481029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd55287775d28251%3A0xb91b4d5859c103ea!2sL&#39;Atelier%20du%2048!5e0!3m2!1sfr!2sfr!4v1589537373304!5m2!1sfr!2sfr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 
 
+
+<div class="line-transparent">
+    <div class="line-hard"></div>
+    <div class="line-medium"></div>
+    <div class="line-light"></div>
   </div>
 
 
 
+
+
+<div id="galeries_tarifs"></div>
+  <div class="cadre">
+    <h3 class="color-green m-4">Galeries / Tarifs</h3>
+    <div class="d-flex justify-content-between">
+
+      <div class="card" style="width: 18rem;">
+        <img src="images/londres1.jpg" class="card-img-top1" alt="Londres">
+        <div class="card-body">
+          <h5 class="card-title">Titrage 1</h5>
+          <p class="card-text">Par <i>AV Photographie, 2019</i><br><b>10€</b></p>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="images/londres3.jpg" class="card-img-top1" alt="Londres">
+        <div class="card-body">
+          <h5 class="card-title">Titrage 2</h5>
+          <p class="card-text">Par <i>AV Photographie, 2019</i><br><b>10€</b></p>
+        </div>
+      </div>
+
+       <div class="card" style="width: 18rem;">
+        <img src="images/londres2.jpg" class="card-img-top1" alt="Londres">
+        <div class="card-body">
+          <h5 class="card-title">Titrage 3</h5>
+          <p class="card-text">Par <i>AV Photographie, 2019</i><br><b>10€</b></p>
+        </div>
+      </div>
+     </div>
+  </div>
+
+
+
+
+
+<div class="line-transparent">
+    <div class="line-hard"></div>
+    <div class="line-medium"></div>
+    <div class="line-light"></div>
+  </div>
+
+
+
+
+
+  <div id="reservation"></div>
+  <div class="typeform-widget" data-url="https://form.typeform.com/to/tyE0GC" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=tyE0GC&utm_source=typeform.com-01E95D2ST1HJW4YRZHQMDY3PCM-free&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=EN" style="color: #999" target="_blank">Typeform</a> </div>
+
+
+
+
+
+
+<div class="footer">
+  <div class="footer-links">
+    <a href="https://www.facebook.com/adriien.viller"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.instagram.com/adrii_viller/"><i class="fab fa-facebook"></i></a>
+    <a href="https://www.linkedin.com/in/adrien-viller-communication/"><i class="fab fa-linkedin"></i></a>
+  </div>
+  <div class="footer-copyright">
+    &copy AV Photographie 2020 📸
+  </div>
+</div>
+
+  <script src="https://kit.fontawesome.com/18ee24e4d3.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+ 
 
 </body>
 </html>
+
+
+
+
+
+
+
+
